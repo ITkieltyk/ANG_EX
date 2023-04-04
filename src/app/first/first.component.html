@@ -1,0 +1,41 @@
+<button class="button" (click)="arrayGenerator(listsWrapper)">
+  Twenty elements arrays generation
+</button>
+<div class="lists-wrapper" #listsWrapper>
+  <ol class="list-from-array">
+    <h4>List modified by "for"</h4>
+    <li *ngFor="let el of arrayModFor(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+  <ol class="list-from-array">
+    <h4>List modified by "for of"</h4>
+    <li *ngFor="let el of arrayModForOf(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+  <ol class="list-from-array">
+    <h4>List modified by "while"</h4>
+    <li *ngFor="let el of arrayModWhile(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+  <ol class="list-from-array">
+    <h4>List modified by "do while"</h4>
+    <li *ngFor="let el of arrayModDoWhile(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+  <ol class="list-from-array">
+    <h4>List modified by "forEach"</h4>
+    <li *ngFor="let el of arrayModForEach(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+  <ol class="list-from-array">
+    <h4>List modified by "map"</h4>
+    <li *ngFor="let el of arrayModMap(); index as i">
+      {{ el }}
+    </li>
+  </ol>
+</div>

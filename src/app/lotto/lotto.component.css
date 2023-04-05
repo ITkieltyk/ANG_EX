@@ -1,4 +1,76 @@
 p {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 auto;
+}
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards, blink 1s infinite;
+  border-right: 0.15em solid orange;
+  width: 0;
+}
+.typed-out-noblink {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0;
+  width: 0;
+}
+.typed-out2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing2 2s steps(24, end) forwards, blink 1s infinite;
+  border-right: 0.15em solid orange;
+  width: 0;
+}
+.typed-out3 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing3 2s steps(24, end) forwards, blink 1s infinite;
+  border-right: 0.15em solid orange;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 270px;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}
+.typing-container {
+  width: 450x;
+}
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes typing3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 420px;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
 }

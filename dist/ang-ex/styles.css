@@ -1,0 +1,25 @@
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[2]!./src/styles.css ***!
+  \********************************************************************************************************************************************************************************************************/
+/* You can add global styles to this file, and also import other style files */
+.button {
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid blue;
+  box-shadow: 0 0 3px 3px rgba(39, 39, 243, 0.61);
+  color: white;
+  background-image: linear-gradient(blue, rgb(32, 75, 219), blue);
+  padding: 5px;
+}
+.button:hover {
+  background-image: linear-gradient(
+    rgb(0, 0, 105),
+    rgb(32, 75, 219),
+    rgb(0, 0, 105)
+  );
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px rgba(39, 39, 243, 0.61);
+  font-weight: 600;
+}
+

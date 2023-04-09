@@ -6,39 +6,42 @@
   gap: 5px;
   position: relative;
   opacity: 100;
-  justify-content: space-between;
+  justify-content: space-around;
   transition: opacity 1s ease, top 2s ease;
   top: 0;
   z-index: -1;
+  flex-wrap: wrap;
 }
 .lists-wrapper {
   display: flex;
   gap: 5px;
   position: absolute;
   opacity: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: -1;
-  transition: opacity 2s ease;
   width: 98%;
+  flex-wrap: wrap;
 }
 
 .list-from-array {
   padding: 10px;
   padding-left: 40px;
 
-  border: 1px solid grey;
-  width: fit-content;
+  width: 150px;
   word-wrap: normal;
+  overflow: hidden;
+  border: 1px solid grey;
 }
 .list-from-array-go {
   padding: 10px;
   padding-left: 40px;
 
   border: 1px solid grey;
-  width: fit-content;
+  width: 80px;
   word-wrap: normal;
   position: absolute;
   top: 0;
+  overflow: hidden;
 }
 
 h4 {

@@ -14,6 +14,8 @@ export class LottoComponent implements OnInit {
   ngOnInit(): void {}
 
   losowanie(element: HTMLElement) {
+    this.wonNumbers = [];
+    this.maszynaLosujaca = [];
     this.tekst1linijka = '';
     const tekst1 = 'Maszyna losująca jest pusta';
     this.tekst1linijka = tekst1;

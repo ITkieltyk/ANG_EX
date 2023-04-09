@@ -1,7 +1,7 @@
 p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0 auto;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 10px;
 }
 .typed-out {
   overflow: hidden;
@@ -26,19 +26,11 @@ p {
 .typed-out3 {
   overflow: hidden;
   white-space: nowrap;
-  animation: typing3 2s steps(24, end) forwards, blink 1s infinite;
+  animation: typing3 2s steps(24, end) forwards;
   border-right: 0.15em solid orange;
   width: 0;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 270px;
-  }
-}
 @keyframes blink {
   from {
     border-color: transparent;
@@ -48,14 +40,23 @@ p {
   }
 }
 .typing-container {
-  width: 450x;
+  width: min(20rem, 100%);
+  margin: 5px auto;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.5rem;
+  }
 }
 @keyframes typing2 {
   from {
     width: 0;
   }
   to {
-    width: 300px;
+    width: 12.2rem;
   }
 }
 @keyframes typing3 {
@@ -63,7 +64,7 @@ p {
     width: 0;
   }
   to {
-    width: 420px;
+    width: 100%;
   }
 }
 @keyframes blink {
